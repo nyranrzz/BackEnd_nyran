@@ -2691,3 +2691,67 @@
 {"code":"ETIMEDOUT","error":"connect ETIMEDOUT","level":"error","message":"Database connection failed:","stack":"Error: connect ETIMEDOUT\n    at PromisePool.query (C:\\Users\\NYRAN\\Desktop\\backend\\node_modules\\mysql2\\lib\\promise\\pool.js:36:22)\n    at testDbConnection (C:\\Users\\NYRAN\\Desktop\\backend\\server.js:62:18)\n    at startServer (C:\\Users\\NYRAN\\Desktop\\backend\\server.js:77:11)\n    at Object.<anonymous> (C:\\Users\\NYRAN\\Desktop\\backend\\server.js:92:1)\n    at Module._compile (node:internal/modules/cjs/loader:1554:14)\n    at Object..js (node:internal/modules/cjs/loader:1706:10)\n    at Module.load (node:internal/modules/cjs/loader:1289:32)\n    at Function._load (node:internal/modules/cjs/loader:1108:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:220:24)","timestamp":"2025-04-17T16:07:40.583Z"}
 {"level":"info","message":"Database connection successful","timestamp":"2025-04-17T16:08:14.714Z"}
 {"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T16:08:14.869Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-17T16:48:32.638Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T16:48:32.801Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-04-17T17:00:08.479Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-04-17T17:00:08.480Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-17T17:00:08.482Z"}
+{"level":"info","message":"Query executed, results: [{\"id\":1,\"name\":\"Market 1\",\"email\":\"market1@panel.com\"},{\"id\":2,\"name\":\"Market 2\",\"email\":\"market2@panel.com\"},{\"id\":3,\"name\":\"Market 3\",\"email\":\"market3@panel.com\"},{\"id\":4,\"name\":\"Market 4\",\"email\":\"market4@panel.com\"},{\"id\":5,\"name\":\"Market 5\",\"email\":\"market5@panel.com\"},{\"id\":6,\"name\":\"Market 6\",\"email\":\"market6@panel.com\"},{\"id\":7,\"name\":\"Market 7\",\"email\":\"market7@panel.com\"},{\"id\":8,\"name\":\"Market 8\",\"email\":\"market8@panel.com\"},{\"id\":9,\"name\":\"Market 9\",\"email\":\"market9@panel.com\"},{\"id\":10,\"name\":\"Market 10\",\"email\":\"market10@panel.com\"},{\"id\":11,\"name\":\"Market 11\",\"email\":\"market11@panel.com\"},{\"id\":12,\"name\":\"Market 12\",\"email\":\"market12@panel.com\"},{\"id\":13,\"name\":\"Market 13\",\"email\":\"market13@panel.com\"},{\"id\":14,\"name\":\"Market 14\",\"email\":\"market14@panel.com\"},{\"id\":15,\"name\":\"Market 15\",\"email\":\"market15@panel.com\"}]","timestamp":"2025-04-17T17:00:09.309Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-04-17T17:00:09.310Z"}
+{"level":"warn","message":"Authentication failed: No token provided","timestamp":"2025-04-17T17:08:44.903Z"}
+{"level":"warn","message":"Authentication failed: No token provided","timestamp":"2025-04-17T17:09:25.565Z"}
+{"level":"warn","message":"Authentication failed: No token provided","timestamp":"2025-04-17T17:09:38.082Z"}
+{"level":"warn","message":"Authentication failed: No token provided","timestamp":"2025-04-17T17:09:57.445Z"}
+{"level":"warn","message":"Authentication failed: No token provided","timestamp":"2025-04-17T17:10:03.000Z"}
+{"level":"warn","message":"Authentication failed: No token provided","timestamp":"2025-04-17T17:10:07.702Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-17T17:12:23.111Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T17:12:23.120Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-17T17:12:45.726Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T17:12:45.736Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-04-17T17:14:59.663Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-04-17T17:15:01.017Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-04-17T17:15:01.203Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-04-17T17:15:01.494Z"}
+{"level":"info","message":"User role:","timestamp":"2025-04-17T17:15:01.495Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-04-17T17:15:01.687Z"}
+{"level":"info","message":"Found 15 products","timestamp":"2025-04-17T17:15:02.822Z"}
+{"level":"info","message":"Fetching draft orders for market ID: 1","timestamp":"2025-04-17T17:15:02.968Z"}
+{"level":"info","message":"Found 3 draft items for market ID: 1","timestamp":"2025-04-17T17:15:04.972Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-04-17T17:17:03.772Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-04-17T17:17:03.780Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-04-17T17:17:03.997Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-04-17T17:17:04.000Z"}
+{"level":"info","message":"User role:","timestamp":"2025-04-17T17:17:04.001Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-04-17T17:17:04.075Z"}
+{"level":"info","message":"Found 15 products","timestamp":"2025-04-17T17:17:04.100Z"}
+{"level":"info","message":"Fetching draft orders for market ID: 1","timestamp":"2025-04-17T17:17:04.111Z"}
+{"level":"info","message":"Found 3 draft items for market ID: 1","timestamp":"2025-04-17T17:17:04.158Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-04-17T17:17:32.048Z"}
+{"level":"info","message":"Found 15 products","timestamp":"2025-04-17T17:17:32.054Z"}
+{"level":"info","message":"Fetching draft orders for market ID: 1","timestamp":"2025-04-17T17:17:32.085Z"}
+{"level":"info","message":"Found 3 draft items for market ID: 1","timestamp":"2025-04-17T17:17:32.148Z"}
+{"level":"info","message":"Clearing all draft orders for market ID: 1","timestamp":"2025-04-17T17:17:37.504Z"}
+{"level":"info","message":"Successfully cleared 3 draft items for market ID: 1","timestamp":"2025-04-17T17:17:39.644Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-04-17T17:17:49.165Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-04-17T17:17:49.184Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-04-17T17:17:49.395Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-04-17T17:17:49.397Z"}
+{"level":"info","message":"User role:","timestamp":"2025-04-17T17:17:49.398Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-04-17T17:17:49.425Z"}
+{"level":"info","message":"Found 15 products","timestamp":"2025-04-17T17:17:49.497Z"}
+{"level":"info","message":"Fetching draft orders for market ID: 1","timestamp":"2025-04-17T17:17:49.511Z"}
+{"level":"info","message":"Found 0 draft items for market ID: 1","timestamp":"2025-04-17T17:17:49.533Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-17T18:52:22.035Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T18:52:22.113Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-17T18:52:36.829Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T18:52:36.840Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-17T18:53:31.270Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T18:53:31.282Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-04-17T18:53:40.968Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-04-17T18:53:40.970Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-17T18:53:40.974Z"}
+{"level":"info","message":"Query executed, results: [{\"id\":1,\"name\":\"Market 1\",\"email\":\"market1@panel.com\"},{\"id\":2,\"name\":\"Market 2\",\"email\":\"market2@panel.com\"},{\"id\":3,\"name\":\"Market 3\",\"email\":\"market3@panel.com\"},{\"id\":4,\"name\":\"Market 4\",\"email\":\"market4@panel.com\"},{\"id\":5,\"name\":\"Market 5\",\"email\":\"market5@panel.com\"},{\"id\":6,\"name\":\"Market 6\",\"email\":\"market6@panel.com\"},{\"id\":7,\"name\":\"Market 7\",\"email\":\"market7@panel.com\"},{\"id\":8,\"name\":\"Market 8\",\"email\":\"market8@panel.com\"},{\"id\":9,\"name\":\"Market 9\",\"email\":\"market9@panel.com\"},{\"id\":10,\"name\":\"Market 10\",\"email\":\"market10@panel.com\"},{\"id\":11,\"name\":\"Market 11\",\"email\":\"market11@panel.com\"},{\"id\":12,\"name\":\"Market 12\",\"email\":\"market12@panel.com\"},{\"id\":13,\"name\":\"Market 13\",\"email\":\"market13@panel.com\"},{\"id\":14,\"name\":\"Market 14\",\"email\":\"market14@panel.com\"},{\"id\":15,\"name\":\"Market 15\",\"email\":\"market15@panel.com\"}]","timestamp":"2025-04-17T18:53:41.000Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-04-17T18:53:41.014Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-17T18:58:29.680Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T18:58:29.691Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-17T19:12:38.981Z"}

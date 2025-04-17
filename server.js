@@ -7,7 +7,7 @@ require('dotenv').config();
 const logger = require('./src/utils/logger');
 
 // Database connection check
-const db = require('./src/config/db');
+// const db = require('./src/config/db');   ////////////
 
 // Routes
 const authRoutes = require('./src/routes/auth.routes');
@@ -74,7 +74,7 @@ const testDbConnection = async () => {
 
 // Start the server
 const startServer = async () => {
-    await testDbConnection();
+    // await testDbConnection(); ////////////////////////
     
     app.listen(PORT, '0.0.0.0', () => {
         logger.info(`Server running on port ${PORT}`);
