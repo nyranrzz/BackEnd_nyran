@@ -10767,3 +10767,57 @@
 {"level":"info","message":"Found 15 transactions for date 2025-04-23","timestamp":"2025-04-23T17:24:43.872Z"}
 {"level":"info","message":"Getting market transactions for date: 2025-04-23","timestamp":"2025-04-23T17:25:10.447Z"}
 {"level":"info","message":"Found 0 transactions for date 2025-04-23","timestamp":"2025-04-23T17:25:10.448Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-23T18:28:27.616Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-04-23T18:28:27.747Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-04-23T18:42:52.708Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-04-23T18:42:55.827Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-04-23T18:42:56.063Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-04-23T18:42:56.128Z"}
+{"level":"info","message":"User role:","timestamp":"2025-04-23T18:42:56.129Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-04-23T18:42:58.021Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-04-23T18:42:58.022Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-23T18:42:58.025Z"}
+{"level":"info","message":"Query executed, results: [{\"id\":1,\"name\":\"Market 1\",\"email\":\"market1@panel.com\"},{\"id\":2,\"name\":\"Market 2\",\"email\":\"market2@panel.com\"},{\"id\":3,\"name\":\"Market 3\",\"email\":\"market3@panel.com\"},{\"id\":4,\"name\":\"Market 4\",\"email\":\"market4@panel.com\"},{\"id\":5,\"name\":\"Market 5\",\"email\":\"market5@panel.com\"},{\"id\":6,\"name\":\"Market 6\",\"email\":\"market6@panel.com\"},{\"id\":7,\"name\":\"Market 7\",\"email\":\"market7@panel.com\"},{\"id\":8,\"name\":\"Market 8\",\"email\":\"market8@panel.com\"},{\"id\":9,\"name\":\"Market 9\",\"email\":\"market9@panel.com\"},{\"id\":10,\"name\":\"Market 10\",\"email\":\"market10@panel.com\"},{\"id\":11,\"name\":\"Market 11\",\"email\":\"market11@panel.com\"},{\"id\":12,\"name\":\"Market 12\",\"email\":\"market12@panel.com\"},{\"id\":13,\"name\":\"Market 13\",\"email\":\"market13@panel.com\"},{\"id\":14,\"name\":\"Market 14\",\"email\":\"market14@panel.com\"},{\"id\":15,\"name\":\"Market 15\",\"email\":\"market15@panel.com\"}]","timestamp":"2025-04-23T18:42:58.172Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-04-23T18:42:58.173Z"}
+{"level":"info","message":"Getting market transactions for date: 2025-04-23","timestamp":"2025-04-23T18:42:58.229Z"}
+{"level":"info","message":"Getting market transactions for date: 2025-04-23","timestamp":"2025-04-23T18:42:58.248Z"}
+{"level":"info","message":"Found 0 transactions for date 2025-04-23","timestamp":"2025-04-23T18:42:59.538Z"}
+{"level":"info","message":"Found 0 transactions for date 2025-04-23","timestamp":"2025-04-23T18:42:59.938Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-04-23T18:43:02.998Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-04-23T18:43:02.998Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-23T18:43:03.000Z"}
+{"level":"info","message":"Query executed, results: [{\"id\":1,\"name\":\"Market 1\",\"email\":\"market1@panel.com\"},{\"id\":2,\"name\":\"Market 2\",\"email\":\"market2@panel.com\"},{\"id\":3,\"name\":\"Market 3\",\"email\":\"market3@panel.com\"},{\"id\":4,\"name\":\"Market 4\",\"email\":\"market4@panel.com\"},{\"id\":5,\"name\":\"Market 5\",\"email\":\"market5@panel.com\"},{\"id\":6,\"name\":\"Market 6\",\"email\":\"market6@panel.com\"},{\"id\":7,\"name\":\"Market 7\",\"email\":\"market7@panel.com\"},{\"id\":8,\"name\":\"Market 8\",\"email\":\"market8@panel.com\"},{\"id\":9,\"name\":\"Market 9\",\"email\":\"market9@panel.com\"},{\"id\":10,\"name\":\"Market 10\",\"email\":\"market10@panel.com\"},{\"id\":11,\"name\":\"Market 11\",\"email\":\"market11@panel.com\"},{\"id\":12,\"name\":\"Market 12\",\"email\":\"market12@panel.com\"},{\"id\":13,\"name\":\"Market 13\",\"email\":\"market13@panel.com\"},{\"id\":14,\"name\":\"Market 14\",\"email\":\"market14@panel.com\"},{\"id\":15,\"name\":\"Market 15\",\"email\":\"market15@panel.com\"}]","timestamp":"2025-04-23T18:43:03.001Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-04-23T18:43:03.003Z"}
+{"level":"info","message":"Received get all total goods request: {\"date\":\"2025-04-23\"}","timestamp":"2025-04-23T18:43:03.008Z"}
+{"level":"info","message":"User: {\"userId\":17,\"email\":\"admin@panel.com\",\"role\":\"admin\",\"name\":\"Admin Panel\",\"iat\":1745433776,\"exp\":1745520176}","timestamp":"2025-04-23T18:43:03.009Z"}
+{"level":"info","message":"Getting all total goods for date 2025-04-23","timestamp":"2025-04-23T18:43:03.010Z"}
+{"level":"info","message":"Getting total goods for all markets on date 2025-04-23","timestamp":"2025-04-23T18:43:03.010Z"}
+{"level":"info","message":"Found 0 total goods records for date 2025-04-23","timestamp":"2025-04-23T18:43:05.645Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-04-23T18:43:14.444Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-04-23T18:43:14.480Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-04-23T18:43:14.623Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-04-23T18:43:14.625Z"}
+{"level":"info","message":"User role:","timestamp":"2025-04-23T18:43:14.626Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-04-23T18:43:14.665Z"}
+{"level":"info","message":"Found 125 products","timestamp":"2025-04-23T18:43:14.896Z"}
+{"level":"info","message":"Fetching draft orders for market ID: 1","timestamp":"2025-04-23T18:43:14.933Z"}
+{"level":"info","message":"Found 0 draft items for market ID: 1","timestamp":"2025-04-23T18:43:15.115Z"}
+{"level":"info","message":"Draft data: []","timestamp":"2025-04-23T18:43:15.115Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-04-23T18:43:26.939Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-04-23T18:43:26.941Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-04-23T18:43:27.082Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-04-23T18:43:27.084Z"}
+{"level":"info","message":"User role:","timestamp":"2025-04-23T18:43:27.084Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-04-23T18:43:27.124Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-04-23T18:43:27.125Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-04-23T18:43:27.147Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-04-23T18:43:27.152Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-04-23T18:43:27.175Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-04-23T18:43:27.200Z"}
+{"level":"info","message":"Query executed, results: [{\"id\":1,\"name\":\"Market 1\",\"email\":\"market1@panel.com\"},{\"id\":2,\"name\":\"Market 2\",\"email\":\"market2@panel.com\"},{\"id\":3,\"name\":\"Market 3\",\"email\":\"market3@panel.com\"},{\"id\":4,\"name\":\"Market 4\",\"email\":\"market4@panel.com\"},{\"id\":5,\"name\":\"Market 5\",\"email\":\"market5@panel.com\"},{\"id\":6,\"name\":\"Market 6\",\"email\":\"market6@panel.com\"},{\"id\":7,\"name\":\"Market 7\",\"email\":\"market7@panel.com\"},{\"id\":8,\"name\":\"Market 8\",\"email\":\"market8@panel.com\"},{\"id\":9,\"name\":\"Market 9\",\"email\":\"market9@panel.com\"},{\"id\":10,\"name\":\"Market 10\",\"email\":\"market10@panel.com\"},{\"id\":11,\"name\":\"Market 11\",\"email\":\"market11@panel.com\"},{\"id\":12,\"name\":\"Market 12\",\"email\":\"market12@panel.com\"},{\"id\":13,\"name\":\"Market 13\",\"email\":\"market13@panel.com\"},{\"id\":14,\"name\":\"Market 14\",\"email\":\"market14@panel.com\"},{\"id\":15,\"name\":\"Market 15\",\"email\":\"market15@panel.com\"}]","timestamp":"2025-04-23T18:43:27.203Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-04-23T18:43:27.204Z"}
+{"level":"info","message":"Found 125 products","timestamp":"2025-04-23T18:43:27.256Z"}
+{"level":"info","message":"Found 0 pending orders","timestamp":"2025-04-23T18:43:27.971Z"}
+{"level":"info","message":"Found 0 baza prices","timestamp":"2025-04-23T18:43:28.003Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-04-23T18:43:28.100Z"}
+{"level":"info","message":"Found 0 baza prices","timestamp":"2025-04-23T18:43:28.103Z"}
