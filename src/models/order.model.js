@@ -224,6 +224,96 @@ class Order {
       throw error;
     }
   }
+
+  // Save baza prices for a product
+  static async saveBazaPrice(productId, price, total, grandTotal) {
+    try {
+      // Check if price already exists for this product
+      const [existingPrices] = await db.query(`
+        SELECT id FROM baza_prices WHERE product_id = ?
+      `, [productId]);
+      
+      if (existingPrices.length > 0) {
+        // Update existing price
+        await db.query(`
+          UPDATE baza_prices
+          SET price = ?, total = ?, grand_total = ?, updated_at = CURRENT_TIMESTAMP
+          WHERE product_id = ?
+        `, [price, total, grandTotal, productId]);
+        return existingPrices[0].id;
+      } else {
+        // Insert new price
+        const [result] = await db.query(`
+          INSERT INTO baza_prices (product_id, price, total, grand_total)
+          VALUES (?, ?, ?, ?)
+        `, [productId, price, total, grandTotal]);
+        return result.insertId;
+      }
+    } catch (error) {
+      logger.error('Error saving baza price:', {
+        error: error.message,
+        stack: error.stack,
+        productId, price, total, grandTotal
+      });
+      throw error;
+    }
+  }
+  
+  // Get all baza prices
+  static async getBazaPrices() {
+    try {
+      const [prices] = await db.query(`
+        SELECT bp.id, bp.product_id, p.name as product_name, 
+               bp.price, bp.total, bp.grand_total, bp.updated_at
+        FROM baza_prices bp
+        JOIN products p ON bp.product_id = p.id
+        ORDER BY p.name
+      `);
+      return prices;
+    } catch (error) {
+      logger.error('Error getting baza prices:', {
+        error: error.message,
+        stack: error.stack
+      });
+      throw error;
+    }
+  }
+  
+  // Clear all baza prices
+  static async clearBazaPrices() {
+    try {
+      const [result] = await db.query(`
+        DELETE FROM baza_prices
+      `);
+      
+      return {
+        deletedCount: result.affectedRows
+      };
+    } catch (error) {
+      logger.error('Error clearing baza prices:', {
+        error: error.message,
+        stack: error.stack
+      });
+      throw error;
+    }
+  }
+  
+  // Calculate total baza amount
+  static async getTotalBazaAmount() {
+    try {
+      const [result] = await db.query(`
+        SELECT SUM(grand_total) as total_amount FROM baza_prices
+      `);
+      
+      return result[0].total_amount || 0;
+    } catch (error) {
+      logger.error('Error calculating total baza amount:', {
+        error: error.message,
+        stack: error.stack
+      });
+      throw error;
+    }
+  }
 }
 
 module.exports = Order; 

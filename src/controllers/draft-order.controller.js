@@ -12,8 +12,21 @@ const draftOrderController = {
       }
 
       logger.info(`Saving ${items.length} draft items for market ID: ${marketId}`);
+      logger.info(`Request body: ${JSON.stringify(req.body)}`);
+      
+      // Process request items to ensure proper format
+      const formattedItems = items.map(item => ({
+        productId: item.productId,
+        quantity: parseFloat(item.quantity) || 0,
+        receivedQuantity: parseFloat(item.receivedQuantity) || 0,
+        price: parseFloat(item.price) || 0,
+        total: parseFloat(item.total) || 0
+      }));
 
-      const result = await DraftOrder.saveDraftItems(marketId, items);
+      // Log formatted items to see what we're saving
+      logger.info(`Formatted items to save: ${JSON.stringify(formattedItems)}`);
+
+      const result = await DraftOrder.saveDraftItems(marketId, formattedItems);
 
       logger.info(`Successfully saved ${result.savedCount} draft items for market ID: ${marketId}`);
       
@@ -41,6 +54,7 @@ const draftOrderController = {
       const drafts = await DraftOrder.getDraftsByMarketId(marketId);
       
       logger.info(`Found ${drafts.length} draft items for market ID: ${marketId}`);
+      logger.info(`Draft data: ${JSON.stringify(drafts)}`);
       
       res.json(drafts);
     } catch (error) {

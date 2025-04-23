@@ -18,4 +18,9 @@ router.post('/approve/:id', orderController.approveOrder);
 // Clear all pending orders - new endpoint
 router.post('/clear-orders', orderController.clearAllOrders);
 
+// Baza prices endpoints
+router.post('/prices', orderController.saveBazaPrices);
+router.get('/prices', orderController.getBazaPrices);
+router.post('/clear-prices', orderController.clearBazaPrices);
+
 module.exports = router; 

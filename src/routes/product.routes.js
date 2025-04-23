@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { authenticateToken, authorize } = require('../middleware/auth');
 const productController = require('../controllers/product.controller');
+const logger = require('../utils/logger');
 
 // Get all products - authenticated users
 router.get('/', authenticateToken, productController.getAllProducts);
@@ -9,14 +10,23 @@ router.get('/', authenticateToken, productController.getAllProducts);
 // Get product by ID - authenticated users
 router.get('/:id', authenticateToken, productController.getProductById);
 
-// Create, update, delete only for admin users
-router.post('/', authenticateToken, authorize('admin'), (req, res) => {
-    res.json({ 
-        success: true,
-        message: 'Ürün ekleme işlevi henüz tamamlanmadı' 
-    });
-});
+// Create product - admin users only
+router.post('/', 
+  authenticateToken, 
+  (req, res, next) => {
+    // Log user information for debugging
+    logger.info(`User attempting to create product: ${JSON.stringify({
+      userId: req.user?.userId,
+      role: req.user?.role,
+      body: req.body
+    })}`);
+    next();
+  },
+  authorize('admin'), 
+  productController.createProduct
+);
 
+// Update product
 router.put('/:id', authenticateToken, authorize('admin'), (req, res) => {
     res.json({ 
         success: true,
@@ -24,6 +34,7 @@ router.put('/:id', authenticateToken, authorize('admin'), (req, res) => {
     });
 });
 
+// Delete product
 router.delete('/:id', authenticateToken, authorize('admin'), (req, res) => {
     res.json({ 
         success: true,

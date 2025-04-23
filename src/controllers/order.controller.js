@@ -175,6 +175,88 @@ const orderController = {
       });
       res.status(500).json({ message: 'Server xətası' });
     }
+  },
+
+  // Save baza price
+  async saveBazaPrices(req, res) {
+    try {
+      const { items, totalAmount } = req.body;
+      
+      if (!items || !items.length) {
+        return res.status(400).json({ message: 'Qiymətlər və məhsullar tələb olunur' });
+      }
+      
+      logger.info(`Saving baza prices for ${items.length} products`);
+      
+      // Save each product price
+      for (const item of items) {
+        await Order.saveBazaPrice(
+          item.productId,
+          parseFloat(item.price) || 0,
+          parseFloat(item.total) || 0,
+          parseFloat(item.grandTotal) || 0
+        );
+      }
+      
+      logger.info('Baza prices saved successfully');
+      res.json({ 
+        success: true,
+        message: 'Qiymətlər yadda saxlanıldı',
+        totalAmount
+      });
+    } catch (error) {
+      logger.error('Error saving baza prices:', {
+        error: error.message,
+        stack: error.stack,
+        body: req.body
+      });
+      res.status(500).json({ message: 'Server xətası' });
+    }
+  },
+  
+  // Get baza prices
+  async getBazaPrices(req, res) {
+    try {
+      logger.info('Fetching all baza prices');
+      
+      const prices = await Order.getBazaPrices();
+      const totalAmount = await Order.getTotalBazaAmount();
+      
+      logger.info(`Found ${prices.length} baza prices`);
+      res.json({
+        prices,
+        totalAmount
+      });
+    } catch (error) {
+      logger.error('Error fetching baza prices:', {
+        error: error.message,
+        stack: error.stack
+      });
+      res.status(500).json({ message: 'Server xətası' });
+    }
+  },
+  
+  // Clear baza prices
+  async clearBazaPrices(req, res) {
+    try {
+      logger.info('Clearing all baza prices');
+      
+      const result = await Order.clearBazaPrices();
+      
+      logger.info(`Successfully cleared ${result.deletedCount} baza prices`);
+      
+      res.json({ 
+        success: true,
+        message: `Bütün qiymətlər silindi`,
+        deletedCount: result.deletedCount
+      });
+    } catch (error) {
+      logger.error('Error clearing baza prices:', {
+        error: error.message,
+        stack: error.stack
+      });
+      res.status(500).json({ message: 'Server xətası' });
+    }
   }
 };
 

@@ -7,7 +7,7 @@ require('dotenv').config();
 const logger = require('./src/utils/logger');
 
 // Database connection check
-// const db = require('./src/config/db');   ////////////
+const db = require('./src/config/db');   ////////////
 
 // Routes
 const authRoutes = require('./src/routes/auth.routes');
@@ -18,6 +18,9 @@ const productRoutes = require('./src/routes/product.routes');
 const transactionRoutes = require('./src/routes/transaction.routes');
 const orderRoutes = require('./src/routes/order.routes');
 const draftOrderRoutes = require('./src/routes/draft-order.routes');
+const marketTotalRoutes = require('./src/routes/market-total.routes');
+const marketTransactionRoutes = require('./src/routes/market-transaction.routes');
+const bazaTotalGoodsRoutes = require('./src/routes/baza-total-goods.routes');
 
 // Middleware
 const errorHandler = require('./src/middleware/errorHandler');
@@ -49,6 +52,9 @@ app.use('/api/products', productRoutes);
 app.use('/api/transactions', transactionRoutes);
 app.use('/api/orders', orderRoutes);
 app.use('/api/draft-orders', draftOrderRoutes);
+app.use('/api/market-total', marketTotalRoutes);
+app.use('/api/market-transactions', marketTransactionRoutes);
+app.use('/api/baza-total-goods', bazaTotalGoodsRoutes);
 
 // Error Handler - must be last
 app.use(errorHandler);
@@ -74,7 +80,7 @@ const testDbConnection = async () => {
 
 // Start the server
 const startServer = async () => {
-    // await testDbConnection(); ////////////////////////
+    await testDbConnection(); ////////////////////////
     
     app.listen(PORT, '0.0.0.0', () => {
         logger.info(`Server running on port ${PORT}`);

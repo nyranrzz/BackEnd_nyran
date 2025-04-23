@@ -67,6 +67,7 @@ CREATE TABLE baza_orders (
 CREATE TABLE market_transactions (
     id INT PRIMARY KEY AUTO_INCREMENT,
     market_id INT NOT NULL,
+    total_goods DECIMAL(10,2) DEFAULT 0,
     total_received DECIMAL(10,2) DEFAULT 0,
     damaged_goods DECIMAL(10,2) DEFAULT 0,
     cash_register DECIMAL(10,2) DEFAULT 0,
@@ -78,6 +79,57 @@ CREATE TABLE market_transactions (
     transaction_date DATE NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (market_id) REFERENCES users(id)
+);
+
+-- Draft Orders tablosu (Market Panel Taslak Siparişleri)
+CREATE TABLE draft_orders (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    market_id INT NOT NULL,
+    product_id INT NOT NULL,
+    quantity DECIMAL(10,2) DEFAULT 0,
+    received_quantity DECIMAL(10,2) DEFAULT 0,
+    price DECIMAL(10,2) DEFAULT 0,
+    total DECIMAL(10,2) DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (market_id) REFERENCES users(id),
+    FOREIGN KEY (product_id) REFERENCES products(id),
+    UNIQUE KEY unique_market_product (market_id, product_id)
+);
+
+-- Baza Prices tablosu (Baza Panel Fiyatları)
+CREATE TABLE baza_prices (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    product_id INT NOT NULL,
+    price DECIMAL(10,2) DEFAULT 0,
+    total DECIMAL(10,2) DEFAULT 0,
+    grand_total DECIMAL(10,2) DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (product_id) REFERENCES products(id)
+);
+
+-- Market Total Received tablosu (Qəbul olunan cəm)
+CREATE TABLE market_total_received (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    market_id INT NOT NULL,
+    total_amount DECIMAL(10,2) DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (market_id) REFERENCES users(id),
+    UNIQUE KEY unique_market (market_id)
+);
+
+-- Baza Total Goods tablosu (Baza Panelden gelen toplam mal değeri)
+CREATE TABLE baza_total_goods (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    market_id INT NOT NULL,
+    total_goods DECIMAL(10,2) DEFAULT 0,
+    transaction_date DATE NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (market_id) REFERENCES users(id),
+    UNIQUE KEY unique_market_date (market_id, transaction_date)
 );
 
 -- Örnek kullanıcı verileri

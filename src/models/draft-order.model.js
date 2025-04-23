@@ -3,8 +3,10 @@ const logger = require('../utils/logger');
 
 class DraftOrder {
   // Save a draft order item - either insert new or update existing
-  static async saveDraftItem(marketId, productId, quantity) {
+  static async saveDraftItem(marketId, productId, data) {
     try {
+      const { quantity = 0, receivedQuantity = 0, price = 0, total = 0 } = data;
+      
       // Check if there's already a draft for this market and product
       const [existingDrafts] = await db.query(
         `SELECT id FROM draft_orders WHERE market_id = ? AND product_id = ?`,
@@ -14,15 +16,19 @@ class DraftOrder {
       if (existingDrafts.length > 0) {
         // Update existing draft
         await db.query(
-          `UPDATE draft_orders SET quantity = ? WHERE market_id = ? AND product_id = ?`,
-          [quantity, marketId, productId]
+          `UPDATE draft_orders 
+           SET quantity = ?, received_quantity = ?, price = ?, total = ?, updated_at = CURRENT_TIMESTAMP
+           WHERE market_id = ? AND product_id = ?`,
+          [quantity, receivedQuantity, price, total, marketId, productId]
         );
         return existingDrafts[0].id;
       } else {
         // Create new draft
         const [result] = await db.query(
-          `INSERT INTO draft_orders (market_id, product_id, quantity) VALUES (?, ?, ?)`,
-          [marketId, productId, quantity]
+          `INSERT INTO draft_orders 
+           (market_id, product_id, quantity, received_quantity, price, total) 
+           VALUES (?, ?, ?, ?, ?, ?)`,
+          [marketId, productId, quantity, receivedQuantity, price, total]
         );
         return result.insertId;
       }
@@ -39,7 +45,8 @@ class DraftOrder {
   static async getDraftsByMarketId(marketId) {
     try {
       const [drafts] = await db.query(
-        `SELECT do.id, do.product_id, p.name as product_name, do.quantity, do.updated_at 
+        `SELECT do.id, do.product_id, p.name as product_name, 
+                do.quantity, do.received_quantity, do.price, do.total, do.updated_at 
          FROM draft_orders do
          JOIN products p ON do.product_id = p.id
          WHERE do.market_id = ?
@@ -85,8 +92,13 @@ class DraftOrder {
       await db.query('START TRANSACTION');
       
       for (const item of items) {
-        if (item.productId && item.quantity > 0) {
-          await this.saveDraftItem(marketId, item.productId, item.quantity);
+        if (item.productId) {
+          await this.saveDraftItem(marketId, item.productId, {
+            quantity: item.quantity || 0,
+            receivedQuantity: item.receivedQuantity || 0,
+            price: item.price || 0,
+            total: item.total || 0
+          });
           savedCount++;
         }
       }

@@ -1,43 +1,18 @@
 const express = require('express');
 const router = express.Router();
 const { authenticateToken, authorize } = require('../middleware/auth');
+const adminController = require('../controllers/admin.controller');
 
 // Tüm admin rotalarını yetkilendir
 router.use(authenticateToken, authorize('admin'));
 
-// Admin paneli geçici olarak devre dışı
-router.use('*', (req, res) => {
-    res.status(503).json({
-        success: false,
-        message: 'Admin paneli geçici olarak kullanım dışıdır. Lütfen daha sonra tekrar deneyin.'
-    });
-});
-
-// Aşağıdaki rotalar şu anda aktif değil
-/*
 // Genel dashboard verilerini getir
-router.get('/dashboard', (req, res) => {
-    res.json({ 
-        success: true,
-        message: 'Dashboard verileri henüz tamamlanmadı' 
-    });
-});
+router.get('/dashboard', adminController.getDashboard);
 
 // Kullanıcı yönetimi
-router.get('/users', (req, res) => {
-    res.json({ 
-        success: true,
-        message: 'Kullanıcı listesi henüz tamamlanmadı' 
-    });
-});
+router.get('/users', adminController.getUsers);
 
 // Sistem ayarları
-router.get('/settings', (req, res) => {
-    res.json({ 
-        success: true,
-        message: 'Sistem ayarları henüz tamamlanmadı' 
-    });
-});
-*/
+router.get('/settings', adminController.getSettings);
 
 module.exports = router; 
