@@ -13,8 +13,9 @@ const marketController = {
             await db.query('SELECT 1');
             logger.info('Database connection successful');
             
+            // Sadece id ve name sütunlarını seçiyoruz
             const [markets] = await db.query(
-                'SELECT id, name, email FROM users WHERE role = "market"'
+                'SELECT id, name FROM users WHERE role = "market"'
             );
             
             logger.info(`Query executed, results: ${JSON.stringify(markets)}`);
@@ -46,8 +47,9 @@ const marketController = {
             const { id } = req.params;
             logger.info(`Fetching market with ID: ${id}`);
             
+            // Sadece veritabanında bulunan sütunları sorguladık
             const [market] = await db.query(
-                'SELECT id, name, email, phone, address, status FROM users WHERE id = ? AND role = "market"',
+                'SELECT id, name, email FROM users WHERE id = ? AND role = "market"',
                 [id]
             );
 
@@ -66,9 +68,9 @@ const marketController = {
     // Create new market
     async createMarket(req, res) {
         try {
-            const { name, email, phone, address, password } = req.body;
+            const { name, email, password } = req.body;
             
-            if (!name || !email || !phone || !password) {
+            if (!name || !email || !password) {
                 return res.status(400).json({ message: 'Bütün məlumatları daxil edin' });
             }
 
@@ -81,9 +83,10 @@ const marketController = {
 
             const hashedPassword = await bcrypt.hash(password, 10);
 
+            // Sadece varolan sütunları ekledik
             const [result] = await db.query(
-                'INSERT INTO users (name, email, phone, address, password, role, status) VALUES (?, ?, ?, ?, ?, "market", "active")',
-                [name, email, phone, address || null, hashedPassword]
+                'INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, "market")',
+                [name, email, hashedPassword]
             );
 
             logger.info(`Created new market with ID: ${result.insertId}`);
@@ -98,7 +101,7 @@ const marketController = {
     async updateMarket(req, res) {
         try {
             const { id } = req.params;
-            const { name, email, phone, address, status } = req.body;
+            const { name, email } = req.body;
 
             logger.info(`Updating market ${id}`);
             
@@ -107,9 +110,10 @@ const marketController = {
                 return res.status(404).json({ message: 'Market tapılmadı' });
             }
 
+            // Sadece varolan sütunları güncelledik
             await db.query(
-                'UPDATE users SET name = ?, email = ?, phone = ?, address = ?, status = ? WHERE id = ?',
-                [name, email, phone, address, status, id]
+                'UPDATE users SET name = ?, email = ? WHERE id = ?',
+                [name, email, id]
             );
 
             logger.info(`Successfully updated market ${id}`);
