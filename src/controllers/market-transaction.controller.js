@@ -127,18 +127,39 @@ const marketTransactionController = {
         [date]
       );
 
-      // Sayısal değerleri doğru formatta olduğundan emin ol
-      const formattedTransactions = transactions.map(transaction => ({
-        ...transaction,
-        total_received: parseFloat(transaction.total_received || 0),
-        damaged_goods: parseFloat(transaction.damaged_goods || 0),
-        cash_register: parseFloat(transaction.cash_register || 0),
-        cash: parseFloat(transaction.cash || 0),
-        salary: parseFloat(transaction.salary || 0),
-        expenses: parseFloat(transaction.expenses || 0),
-        difference: parseFloat(transaction.difference || 0),
-        remainder: parseFloat(transaction.remainder || 0)
-      }));
+      // Tüm marketlerin işlem tarihine kadar olan Qalıq (remainder) değerlerini topla
+      // Bu, her market için kümülatif Qalıq değerini vermemizi sağlar
+      const formattedTransactions = [];
+      
+      for (const transaction of transactions) {
+        // Mevcut pazara ait ve mevcut tarihten önce veya eşit olan işlemlerden tüm remainder değerlerini al
+        const [previousTransactions] = await db.query(
+          `SELECT remainder 
+           FROM market_transactions 
+           WHERE market_id = ? AND transaction_date <= ?
+           ORDER BY transaction_date ASC`,
+          [transaction.market_id, date]
+        );
+        
+        // Tüm remainder değerlerini topla
+        let cumulativeRemainder = 0;
+        for (const prevTx of previousTransactions) {
+          cumulativeRemainder += parseFloat(prevTx.remainder || 0);
+        }
+        
+        // İşlem verisini düzenle - remainder değerini kümülatif değerle değiştir
+        formattedTransactions.push({
+          ...transaction,
+          total_received: parseFloat(transaction.total_received || 0),
+          damaged_goods: parseFloat(transaction.damaged_goods || 0),
+          cash_register: parseFloat(transaction.cash_register || 0),
+          cash: parseFloat(transaction.cash || 0),
+          salary: parseFloat(transaction.salary || 0),
+          expenses: parseFloat(transaction.expenses || 0),
+          difference: parseFloat(transaction.difference || 0),
+          remainder: cumulativeRemainder // Kümülatif değer
+        });
+      }
 
       logger.info(`Found ${transactions.length} transactions for date ${date}`);
       res.json(formattedTransactions);
@@ -167,6 +188,22 @@ const marketTransactionController = {
         return res.json(null);
       }
 
+      // Kümülatif Qalıq (remainder) değerini hesapla
+      // Bu marketin bu tarih ve öncesindeki tüm işlemlerin remainder değerlerini topla
+      const [previousTransactions] = await db.query(
+        `SELECT remainder 
+         FROM market_transactions 
+         WHERE market_id = ? AND transaction_date <= ?
+         ORDER BY transaction_date ASC`,
+        [marketId, date]
+      );
+      
+      // Tüm remainder değerlerini topla
+      let cumulativeRemainder = 0;
+      for (const tx of previousTransactions) {
+        cumulativeRemainder += parseFloat(tx.remainder || 0);
+      }
+
       // Sayısal değerleri doğru formatta olduğundan emin ol
       const transaction = {
         ...transactions[0],
@@ -177,7 +214,7 @@ const marketTransactionController = {
         salary: parseFloat(transactions[0].salary || 0),
         expenses: parseFloat(transactions[0].expenses || 0),
         difference: parseFloat(transactions[0].difference || 0),
-        remainder: parseFloat(transactions[0].remainder || 0)
+        remainder: cumulativeRemainder // Kümülatif remainder değeri
       };
 
       logger.info(`Found transaction for market ${marketId} on date ${date}`);

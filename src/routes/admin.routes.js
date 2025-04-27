@@ -15,4 +15,8 @@ router.get('/users', adminController.getUsers);
 // Sistem ayarları
 router.get('/settings', adminController.getSettings);
 
+// Şifre değiştirme endpoint'leri
+router.post('/change-password', adminController.changeUserPassword);
+router.post('/users/:id/change-password', adminController.changeUserPasswordById);
+
 module.exports = router; 

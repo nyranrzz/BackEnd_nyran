@@ -1,5 +1,6 @@
 const db = require('../config/db');
 const logger = require('../utils/logger');
+const bcrypt = require('bcryptjs');
 
 const adminController = {
   // Get dashboard summary data
@@ -67,6 +68,89 @@ const adminController = {
       });
     } catch (error) {
       logger.error('Error fetching users:', {
+        error: error.message,
+        stack: error.stack
+      });
+      res.status(500).json({ message: 'Server xətası' });
+    }
+  },
+  
+  // Change user password (admin function)
+  async changeUserPassword(req, res) {
+    try {
+      const { userId, newPassword } = req.body;
+      
+      if (!userId || !newPassword) {
+        return res.status(400).json({ message: 'Kullanıcı ID ve yeni şifre gereklidir' });
+      }
+      
+      if (newPassword.length < 6) {
+        return res.status(400).json({ message: 'Şifre en az 6 karakter olmalıdır' });
+      }
+      
+      logger.info(`Admin changing password for user ID: ${userId}`);
+      
+      // Check if user exists
+      const [users] = await db.query('SELECT * FROM users WHERE id = ?', [userId]);
+      if (users.length === 0) {
+        return res.status(404).json({ message: 'Kullanıcı bulunamadı' });
+      }
+      
+      // Hash new password
+      const hashedPassword = await bcrypt.hash(newPassword, 10);
+      
+      // Update user password
+      await db.query('UPDATE users SET password = ? WHERE id = ?', [hashedPassword, userId]);
+      
+      logger.info(`Password changed successfully for user ID: ${userId}`);
+      res.json({ 
+        success: true, 
+        message: 'Şifre başarıyla değiştirildi' 
+      });
+    } catch (error) {
+      logger.error('Error changing user password:', {
+        error: error.message,
+        stack: error.stack
+      });
+      res.status(500).json({ message: 'Server xətası' });
+    }
+  },
+  
+  // Change user password by ID (alternative endpoint)
+  async changeUserPasswordById(req, res) {
+    try {
+      const userId = req.params.id;
+      const { newPassword } = req.body;
+      
+      if (!newPassword) {
+        return res.status(400).json({ message: 'Yeni şifre gereklidir' });
+      }
+      
+      if (newPassword.length < 6) {
+        return res.status(400).json({ message: 'Şifre en az 6 karakter olmalıdır' });
+      }
+      
+      logger.info(`Admin changing password for user ID: ${userId}`);
+      
+      // Check if user exists
+      const [users] = await db.query('SELECT * FROM users WHERE id = ?', [userId]);
+      if (users.length === 0) {
+        return res.status(404).json({ message: 'Kullanıcı bulunamadı' });
+      }
+      
+      // Hash new password
+      const hashedPassword = await bcrypt.hash(newPassword, 10);
+      
+      // Update user password
+      await db.query('UPDATE users SET password = ? WHERE id = ?', [hashedPassword, userId]);
+      
+      logger.info(`Password changed successfully for user ID: ${userId}`);
+      res.json({ 
+        success: true, 
+        message: 'Şifre başarıyla değiştirildi' 
+      });
+    } catch (error) {
+      logger.error('Error changing user password by ID:', {
         error: error.message,
         stack: error.stack
       });

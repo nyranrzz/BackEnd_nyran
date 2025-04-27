@@ -13,20 +13,48 @@ const marketController = {
             await db.query('SELECT 1');
             logger.info('Database connection successful');
             
-            // Sadece id ve name sütunlarını seçiyoruz
-            const [markets] = await db.query(
-                'SELECT id, name FROM users WHERE role = "market"'
-            );
+            // Önce tablo yapısını kontrol edelim - hangi sütunlar var?
+            const [columns] = await db.query('DESCRIBE users');
+            logger.info(`Users table structure: ${JSON.stringify(columns)}`);
             
-            logger.info(`Query executed, results: ${JSON.stringify(markets)}`);
+            // Kullanılabilir roller neler?
+            const [roles] = await db.query('SELECT DISTINCT role FROM users');
+            logger.info(`Available roles in users table: ${JSON.stringify(roles)}`);
             
-            if (!markets || !markets.length) {
-                logger.warn('No markets found in database');
-                return res.json([]); // Return empty array instead of 404
+            // Şimdi ilk birkaç kullanıcıyı görelim
+            const [sampleUsers] = await db.query('SELECT * FROM users LIMIT 3');
+            logger.info(`Sample users from database: ${JSON.stringify(sampleUsers)}`);
+            
+            // Doğru rol değerini kullanarak marketi seçelim
+            // Digital Ocean'daki veritabanında rol değeri farklı olabilir
+            let roleValue = 'market';
+            
+            // Eğer roles dizisi doluysa ve içinde market yoksa alternatif bir değer bulalım
+            if (roles.length > 0) {
+                const roleFound = roles.find(r => r.role === 'market');
+                if (!roleFound) {
+                    // Digital Ocean'daki rol ismini öğrenelim
+                    // marketplace, store, shop gibi alternatifler olabilir
+                    roleValue = roles[0].role; // İlk rol değerini kullanalım
+                    logger.info(`Using alternative role value: ${roleValue}`);
+                }
             }
-
-            logger.info(`Found ${markets.length} markets`);
-            res.json(markets);
+            
+            // Market rolüne sahip kullanıcıları çekelim
+                const [markets] = await db.query(
+                    'SELECT id, name FROM users WHERE role = ?',
+                [roleValue]
+                );
+                
+            logger.info(`Query executed with role '${roleValue}', results: ${JSON.stringify(markets)}`);
+                
+                if (!markets || !markets.length) {
+                    logger.warn('No markets found in database');
+                    return res.json([]); // Return empty array instead of 404
+                }
+                
+                logger.info(`Found ${markets.length} markets`);
+                res.json(markets);
         } catch (error) {
             logger.error('Error in getAllMarkets:', {
                 error: error.message,
@@ -49,7 +77,7 @@ const marketController = {
             
             // Sadece veritabanında bulunan sütunları sorguladık
             const [market] = await db.query(
-                'SELECT id, name, email FROM users WHERE id = ? AND role = "market"',
+                'SELECT id, name, email FROM users WHERE id = ?',
                 [id]
             );
 
@@ -85,8 +113,8 @@ const marketController = {
 
             // Sadece varolan sütunları ekledik
             const [result] = await db.query(
-                'INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, "market")',
-                [name, email, hashedPassword]
+                'INSERT INTO users (name, email, password, role) VALUES (?, ?, ?, ?)',
+                [name, email, hashedPassword, 'market']
             );
 
             logger.info(`Created new market with ID: ${result.insertId}`);
