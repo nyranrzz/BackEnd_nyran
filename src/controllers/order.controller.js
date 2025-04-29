@@ -193,6 +193,7 @@ const orderController = {
         await Order.saveBazaPrice(
           item.productId,
           parseFloat(item.price) || 0,
+          parseFloat(item.weight) || 0,
           parseFloat(item.total) || 0,
           parseFloat(item.grandTotal) || 0
         );

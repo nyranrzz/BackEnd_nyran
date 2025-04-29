@@ -226,7 +226,7 @@ class Order {
   }
 
   // Save baza prices for a product
-  static async saveBazaPrice(productId, price, total, grandTotal) {
+  static async saveBazaPrice(productId, price, weight, total, grandTotal) {
     try {
       // Check if price already exists for this product
       const [existingPrices] = await db.query(`
@@ -237,23 +237,23 @@ class Order {
         // Update existing price
         await db.query(`
           UPDATE baza_prices
-          SET price = ?, total = ?, grand_total = ?, updated_at = CURRENT_TIMESTAMP
+          SET price = ?, weight = ?, total = ?, grand_total = ?, updated_at = CURRENT_TIMESTAMP
           WHERE product_id = ?
-        `, [price, total, grandTotal, productId]);
+        `, [price, weight, total, grandTotal, productId]);
         return existingPrices[0].id;
       } else {
         // Insert new price
         const [result] = await db.query(`
-          INSERT INTO baza_prices (product_id, price, total, grand_total)
-          VALUES (?, ?, ?, ?)
-        `, [productId, price, total, grandTotal]);
+          INSERT INTO baza_prices (product_id, price, weight, total, grand_total)
+          VALUES (?, ?, ?, ?, ?)
+        `, [productId, price, weight, total, grandTotal]);
         return result.insertId;
       }
     } catch (error) {
       logger.error('Error saving baza price:', {
         error: error.message,
         stack: error.stack,
-        productId, price, total, grandTotal
+        productId, price, weight, total, grandTotal
       });
       throw error;
     }
@@ -264,7 +264,7 @@ class Order {
     try {
       const [prices] = await db.query(`
         SELECT bp.id, bp.product_id, p.name as product_name, 
-               bp.price, bp.total, bp.grand_total, bp.updated_at
+               bp.price, bp.weight, bp.total, bp.grand_total, bp.updated_at
         FROM baza_prices bp
         JOIN products p ON bp.product_id = p.id
         ORDER BY p.name
