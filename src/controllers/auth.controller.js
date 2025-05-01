@@ -9,7 +9,7 @@ const login = async (req, res) => {
         const { email, password } = req.body;
 
         if (!email || !password) {
-            return res.status(400).json({ message: 'E-poçt və şifrə tələb olunur' });
+            return res.status(400).json({ message: 'Требуется указать email и пароль' });
         }
 
         logger.info('Login attempt for email:', email);
@@ -21,7 +21,7 @@ const login = async (req, res) => {
         const user = users[0];
         if (!user) {
             logger.warn('No user found with email:', email);
-            return res.status(401).json({ message: 'E-poçt və ya şifrə səhvdir' });
+            return res.status(401).json({ message: 'Неверный email или пароль' });
         }
 
         // Check password
@@ -30,7 +30,7 @@ const login = async (req, res) => {
 
         if (!isValidPassword) {
             logger.warn('Invalid password for user:', email);
-            return res.status(401).json({ message: 'E-poçt və ya şifrə səhvdir' });
+            return res.status(401).json({ message: 'Неверный email или пароль' });
         }
 
         // Generate JWT token
@@ -59,7 +59,7 @@ const login = async (req, res) => {
         });
     } catch (error) {
         logger.error('Login error:', error);
-        res.status(500).json({ message: 'Server xətası' });
+        res.status(500).json({ message: 'Ошибка сервера' });
     }
 };
 
