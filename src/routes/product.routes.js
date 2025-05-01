@@ -10,7 +10,7 @@ router.get('/', authenticateToken, productController.getAllProducts);
 // Get product by ID - authenticated users
 router.get('/:id', authenticateToken, productController.getProductById);
 
-// Create product - admin users only
+// Create product - admin and baza users
 router.post('/', 
   authenticateToken, 
   (req, res, next) => {
@@ -22,7 +22,7 @@ router.post('/',
     })}`);
     next();
   },
-  authorize('admin'), 
+  authorize('admin', 'baza'), 
   productController.createProduct
 );
 

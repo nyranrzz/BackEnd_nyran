@@ -15342,3 +15342,942 @@
 {"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T16:19:50.698Z"}
 {"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T16:19:50.787Z"}
 {"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T16:19:50.791Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T19:58:28.381Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-01T19:58:28.457Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:16:03.447Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:16:04.458Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:16:04.646Z"}
+{"level":"warn","message":"Invalid password for user:","timestamp":"2025-05-01T20:16:04.647Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:16:10.641Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:16:10.644Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:16:10.782Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:16:10.817Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:16:10.817Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:16:10.863Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:16:10.864Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:16:10.865Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:16:10.925Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:16:10.931Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:16:10.937Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:16:12.278Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:16:12.307Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:16:12.399Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:16:12.403Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:16:12.712Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:16:12.984Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:16:12.987Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:16:13.272Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:16:13.287Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:16:13.302Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:16:13.305Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:16:13.306Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:29:24.524Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:29:24.613Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:29:24.748Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:29:24.751Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:29:24.751Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:29:24.791Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:29:24.958Z"}
+{"level":"info","message":"Fetching draft orders for market ID: 1","timestamp":"2025-05-01T20:29:24.992Z"}
+{"level":"info","message":"Found 1 draft items for market ID: 1","timestamp":"2025-05-01T20:29:25.701Z"}
+{"level":"info","message":"Draft data: [{\"id\":395,\"product_id\":11,\"product_name\":\"Абат\",\"quantity\":\"1.00\",\"received_quantity\":\"5.00\",\"price\":\"5.00\",\"total\":\"25.00\",\"updated_at\":\"2025-05-01T15:54:31.000Z\"}]","timestamp":"2025-05-01T20:29:25.701Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:30:05.967Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:30:05.970Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:30:06.114Z"}
+{"level":"warn","message":"Invalid password for user:","timestamp":"2025-05-01T20:30:06.115Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:30:14.777Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:30:14.778Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:30:14.912Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:30:14.914Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:30:14.915Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:30:14.947Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:30:14.947Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:30:14.948Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:30:14.952Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:30:14.954Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:30:14.956Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:30:14.958Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:30:14.959Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:30:14.963Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:30:14.967Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:30:14.969Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:30:14.979Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:30:14.994Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:30:15.007Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:30:15.011Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:30:15.057Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:30:15.094Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:30:15.242Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:35:24.532Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:35:24.534Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:35:24.666Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:35:24.669Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:35:24.669Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:35:24.736Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:35:24.736Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:35:24.737Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:35:24.741Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:35:24.743Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:35:24.745Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:35:24.746Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:35:24.747Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:35:24.753Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:35:24.757Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:35:24.760Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:35:24.762Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:35:24.764Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:35:24.766Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:35:24.788Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:35:24.830Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:35:24.894Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:35:24.897Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:35:24.999Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:35:25.002Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:35:28.691Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:35:28.709Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:35:30.701Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:35:30.703Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:35:59.995Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:35:59.997Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:36:00.139Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:36:00.142Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:36:00.142Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:36:07.807Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:36:07.809Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:36:07.941Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:36:07.943Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:36:07.943Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:36:07.969Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:36:07.969Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:36:07.971Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:36:07.993Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:36:07.997Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:36:08.000Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:36:08.003Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:36:08.006Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:36:08.009Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:36:08.011Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:36:08.030Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:36:08.034Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:36:08.089Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:36:08.092Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:36:08.471Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:36:08.474Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:36:08.475Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:36:08.477Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:36:08.478Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:36:08.516Z"}
+{"level":"info","message":"User attempting to create product: {\"userId\":16,\"role\":\"baza\",\"body\":{\"name\":\"!\"}}","timestamp":"2025-05-01T20:36:13.944Z"}
+{"level":"warn","message":"Authorization failed: User role baza not authorized","requiredRoles":["admin"],"timestamp":"2025-05-01T20:36:13.945Z","userId":16,"userRole":"baza"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:37:07.566Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:37:07.568Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:37:20.841Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:37:20.842Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:37:20.844Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:37:20.855Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:37:20.861Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:37:20.868Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:37:20.874Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:37:20.878Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:37:20.883Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:37:20.888Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:37:20.896Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:37:20.908Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:37:20.919Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:37:20.950Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:37:20.954Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:37:21.214Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:37:21.242Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:37:21.244Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:37:21.247Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:37:21.249Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:38:49.814Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:38:49.814Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:38:49.815Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:38:49.818Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:38:49.819Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:38:49.821Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:38:49.823Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:38:49.825Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:38:49.831Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:38:49.834Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:38:49.837Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:38:49.840Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:38:49.843Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:38:49.847Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:38:49.877Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:38:49.890Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:38:49.895Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:38:49.902Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:38:49.947Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:38:50.001Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:39:31.052Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:39:31.053Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:39:31.055Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:39:31.056Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:39:31.059Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:39:31.061Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:39:31.065Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:39:31.070Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:39:31.072Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:39:31.076Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:39:31.079Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:39:31.093Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:39:31.096Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:39:31.759Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:39:31.922Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:39:31.980Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:39:31.982Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:39:31.983Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:39:31.987Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:39:31.989Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:39:54.754Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:39:54.754Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:39:54.757Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:39:54.758Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:39:54.760Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:39:54.761Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:39:54.764Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:39:54.767Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:39:54.773Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:39:54.775Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:39:54.778Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:39:54.780Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:39:54.783Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:39:54.784Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:39:54.788Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:39:54.791Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:39:54.971Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:39:54.974Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:39:55.014Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:39:55.019Z"}
+{"level":"info","message":"User attempting to create product: {\"userId\":16,\"role\":\"baza\",\"body\":{\"name\":\"!\"}}","timestamp":"2025-05-01T20:40:47.074Z"}
+{"level":"warn","message":"Authorization failed: User role baza not authorized","requiredRoles":["admin"],"timestamp":"2025-05-01T20:40:47.075Z","userId":16,"userRole":"baza"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:41:02.298Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:41:02.300Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:41:02.439Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:41:02.441Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:41:02.441Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:41:02.477Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:41:02.478Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:41:02.479Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:41:02.674Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:41:02.693Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:41:02.695Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:41:02.697Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:41:02.698Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:41:02.733Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:41:02.736Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:41:02.739Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:41:02.742Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:41:02.743Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:41:02.745Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:41:02.750Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:41:02.754Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:41:02.813Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:41:02.816Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:41:02.846Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:41:02.849Z"}
+{"level":"info","message":"User attempting to create product: {\"userId\":16,\"role\":\"baza\",\"body\":{\"name\":\"!\"}}","timestamp":"2025-05-01T20:41:06.787Z"}
+{"level":"warn","message":"Authorization failed: User role baza not authorized","requiredRoles":["admin"],"timestamp":"2025-05-01T20:41:06.788Z","userId":16,"userRole":"baza"}
+{"level":"info","message":"User attempting to create product: {\"userId\":16,\"role\":\"baza\",\"body\":{\"name\":\"!\"}}","timestamp":"2025-05-01T20:43:16.816Z"}
+{"level":"warn","message":"Authorization failed: User role baza not authorized","requiredRoles":["admin"],"timestamp":"2025-05-01T20:43:16.817Z","userId":16,"userRole":"baza"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:44:49.415Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2025-05-01T20:44:49.452Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:44:50.387Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:44:50.414Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:44:50.604Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:44:50.611Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:44:50.612Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:44:50.848Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:44:50.849Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:44:50.851Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:44:50.865Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:44:50.920Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:44:50.924Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:44:50.932Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:44:50.954Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:44:51.068Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:44:51.071Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:44:51.073Z"}
+{"level":"info","message":"Found 126 products","timestamp":"2025-05-01T20:44:51.075Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:44:51.078Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:44:51.079Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:44:51.169Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:44:51.185Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:44:51.687Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:44:51.690Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:44:52.090Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:44:52.102Z"}
+{"level":"info","message":"User attempting to create product: {\"userId\":16,\"role\":\"baza\",\"body\":{\"name\":\"!\"}}","timestamp":"2025-05-01T20:44:55.362Z"}
+{"level":"info","message":"Received request to create product. Body: {\"name\":\"!\"}","timestamp":"2025-05-01T20:44:55.363Z"}
+{"level":"info","message":"Request user: {\"userId\":16,\"email\":\"baza@panel.com\",\"role\":\"baza\",\"name\":\"Baza İdarəetmə\",\"iat\":1746132290,\"exp\":1746218690}","timestamp":"2025-05-01T20:44:55.363Z"}
+{"level":"info","message":"Creating new product with name: \"!\"","timestamp":"2025-05-01T20:44:55.364Z"}
+{"level":"info","message":"Executing SQL query: INSERT INTO products (name) VALUES (?) with params: [\"!\"]","timestamp":"2025-05-01T20:44:55.364Z"}
+{"created_at":"2025-05-01T20:44:55.000Z","id":127,"level":"info","message":"Product created with ID: 127, details:","name":"!","status":1,"timestamp":"2025-05-01T20:44:56.531Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:45:20.885Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:45:20.888Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:45:21.026Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:45:21.029Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:45:21.029Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:45:21.079Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:45:21.080Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:45:21.081Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:45:21.106Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:45:21.112Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:45:21.115Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:45:21.118Z"}
+{"level":"info","message":"Found 127 products","timestamp":"2025-05-01T20:45:21.122Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:45:21.125Z"}
+{"level":"info","message":"Found 127 products","timestamp":"2025-05-01T20:45:21.129Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:45:21.149Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:45:21.160Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:45:21.164Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:45:21.323Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:45:21.326Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:45:21.371Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:45:21.374Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:45:21.376Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:45:21.379Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:45:21.380Z"}
+{"level":"info","message":"User attempting to create product: {\"userId\":16,\"role\":\"baza\",\"body\":{\"name\":\"“\"}}","timestamp":"2025-05-01T20:45:26.092Z"}
+{"level":"info","message":"Received request to create product. Body: {\"name\":\"“\"}","timestamp":"2025-05-01T20:45:26.093Z"}
+{"level":"info","message":"Request user: {\"userId\":16,\"email\":\"baza@panel.com\",\"role\":\"baza\",\"name\":\"Baza İdarəetmə\",\"iat\":1746132321,\"exp\":1746218721}","timestamp":"2025-05-01T20:45:26.094Z"}
+{"level":"info","message":"Creating new product with name: \"“\"","timestamp":"2025-05-01T20:45:26.094Z"}
+{"level":"info","message":"Executing SQL query: INSERT INTO products (name) VALUES (?) with params: [\"“\"]","timestamp":"2025-05-01T20:45:26.095Z"}
+{"created_at":"2025-05-01T20:45:26.000Z","id":128,"level":"info","message":"Product created with ID: 128, details:","name":"“","status":1,"timestamp":"2025-05-01T20:45:26.203Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:46:29.756Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:46:29.758Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:46:29.905Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:46:29.908Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:46:29.908Z"}
+{"level":"info","message":"User attempting to create product: {\"userId\":17,\"role\":\"admin\",\"body\":{\"name\":\"&\"}}","timestamp":"2025-05-01T20:46:33.672Z"}
+{"level":"info","message":"Received request to create product. Body: {\"name\":\"&\"}","timestamp":"2025-05-01T20:46:33.673Z"}
+{"level":"info","message":"Request user: {\"userId\":17,\"email\":\"admin@panel.com\",\"role\":\"admin\",\"name\":\"Admin Panel\",\"iat\":1746132389,\"exp\":1746218789}","timestamp":"2025-05-01T20:46:33.673Z"}
+{"level":"info","message":"Creating new product with name: \"&\"","timestamp":"2025-05-01T20:46:33.674Z"}
+{"level":"info","message":"Executing SQL query: INSERT INTO products (name) VALUES (?) with params: [\"&\"]","timestamp":"2025-05-01T20:46:33.674Z"}
+{"created_at":"2025-05-01T20:46:33.000Z","id":129,"level":"info","message":"Product created with ID: 129, details:","name":"&","status":1,"timestamp":"2025-05-01T20:46:33.823Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:46:40.932Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:46:40.934Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:46:41.075Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:46:41.077Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:46:41.077Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:46:41.104Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:46:41.106Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:46:41.108Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:46:41.113Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:46:41.118Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:46:41.122Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:46:41.136Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:46:41.141Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:46:41.142Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:46:41.144Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:46:41.147Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:46:41.150Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:46:41.151Z"}
+{"level":"info","message":"Found 129 products","timestamp":"2025-05-01T20:46:41.157Z"}
+{"level":"info","message":"Found 129 products","timestamp":"2025-05-01T20:46:41.160Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:46:41.164Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:46:41.174Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:46:41.203Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:46:41.207Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:46:41.209Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:46:58.259Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:46:58.281Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:46:58.287Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:46:58.292Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:46:58.305Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:46:58.318Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:46:58.330Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:46:58.332Z"}
+{"level":"info","message":"Found 129 products","timestamp":"2025-05-01T20:46:58.341Z"}
+{"level":"info","message":"Found 129 products","timestamp":"2025-05-01T20:46:58.388Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:46:58.419Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:46:58.439Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:46:58.455Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:46:58.469Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:46:58.479Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:46:58.489Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:46:58.500Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:46:58.504Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:46:58.539Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:46:58.551Z"}
+{"level":"info","message":"User attempting to create product: {\"userId\":16,\"role\":\"baza\",\"body\":{\"name\":\"€\"}}","timestamp":"2025-05-01T20:48:00.037Z"}
+{"level":"info","message":"Received request to create product. Body: {\"name\":\"€\"}","timestamp":"2025-05-01T20:48:00.038Z"}
+{"level":"info","message":"Request user: {\"userId\":16,\"email\":\"baza@panel.com\",\"role\":\"baza\",\"name\":\"Baza İdarəetmə\",\"iat\":1746132401,\"exp\":1746218801}","timestamp":"2025-05-01T20:48:00.038Z"}
+{"level":"info","message":"Creating new product with name: \"€\"","timestamp":"2025-05-01T20:48:00.039Z"}
+{"level":"info","message":"Executing SQL query: INSERT INTO products (name) VALUES (?) with params: [\"€\"]","timestamp":"2025-05-01T20:48:00.040Z"}
+{"created_at":"2025-05-01T20:48:00.000Z","id":130,"level":"info","message":"Product created with ID: 130, details:","name":"€","status":1,"timestamp":"2025-05-01T20:48:00.250Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:48:01.521Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:48:01.522Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:48:01.523Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:48:01.526Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:48:01.529Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:48:01.531Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:48:01.533Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:48:01.534Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:48:01.537Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:48:01.540Z"}
+{"level":"info","message":"Found 130 products","timestamp":"2025-05-01T20:48:01.543Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:48:01.547Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:48:01.551Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:48:01.552Z"}
+{"level":"info","message":"Found 130 products","timestamp":"2025-05-01T20:48:01.556Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:48:01.559Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:48:01.655Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:48:01.671Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:48:01.715Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:48:01.720Z"}
+{"level":"info","message":"User attempting to create product: {\"userId\":16,\"role\":\"baza\",\"body\":{\"name\":\"/\"}}","timestamp":"2025-05-01T20:48:11.592Z"}
+{"level":"info","message":"Received request to create product. Body: {\"name\":\"/\"}","timestamp":"2025-05-01T20:48:11.592Z"}
+{"level":"info","message":"Request user: {\"userId\":16,\"email\":\"baza@panel.com\",\"role\":\"baza\",\"name\":\"Baza İdarəetmə\",\"iat\":1746132401,\"exp\":1746218801}","timestamp":"2025-05-01T20:48:11.593Z"}
+{"level":"info","message":"Creating new product with name: \"/\"","timestamp":"2025-05-01T20:48:11.594Z"}
+{"level":"info","message":"Executing SQL query: INSERT INTO products (name) VALUES (?) with params: [\"/\"]","timestamp":"2025-05-01T20:48:11.595Z"}
+{"created_at":"2025-05-01T20:48:11.000Z","id":131,"level":"info","message":"Product created with ID: 131, details:","name":"/","status":1,"timestamp":"2025-05-01T20:48:11.718Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:48:12.836Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:48:12.837Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:48:12.838Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:48:12.841Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:48:12.843Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:48:12.845Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:48:12.848Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:48:12.850Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:48:12.856Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:48:12.860Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:48:12.863Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:48:12.865Z"}
+{"level":"info","message":"Found 131 products","timestamp":"2025-05-01T20:48:12.867Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:48:12.869Z"}
+{"level":"info","message":"Found 131 products","timestamp":"2025-05-01T20:48:12.872Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:48:12.874Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:48:12.975Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:48:12.978Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:48:13.168Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:48:13.171Z"}
+{"level":"info","message":"User attempting to create product: {\"userId\":16,\"role\":\"baza\",\"body\":{\"name\":\"=\"}}","timestamp":"2025-05-01T20:48:23.787Z"}
+{"level":"info","message":"Received request to create product. Body: {\"name\":\"=\"}","timestamp":"2025-05-01T20:48:23.788Z"}
+{"level":"info","message":"Request user: {\"userId\":16,\"email\":\"baza@panel.com\",\"role\":\"baza\",\"name\":\"Baza İdarəetmə\",\"iat\":1746132401,\"exp\":1746218801}","timestamp":"2025-05-01T20:48:23.788Z"}
+{"level":"info","message":"Creating new product with name: \"=\"","timestamp":"2025-05-01T20:48:23.789Z"}
+{"level":"info","message":"Executing SQL query: INSERT INTO products (name) VALUES (?) with params: [\"=\"]","timestamp":"2025-05-01T20:48:23.789Z"}
+{"created_at":"2025-05-01T20:48:23.000Z","id":132,"level":"info","message":"Product created with ID: 132, details:","name":"=","status":1,"timestamp":"2025-05-01T20:48:24.031Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:48:25.565Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:48:25.565Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:48:25.567Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:48:25.594Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:48:25.598Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:48:25.602Z"}
+{"level":"info","message":"Found 132 products","timestamp":"2025-05-01T20:48:25.604Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:48:25.607Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:48:25.611Z"}
+{"level":"info","message":"Found 132 products","timestamp":"2025-05-01T20:48:25.616Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:48:25.619Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:48:25.643Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:48:25.647Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:48:25.741Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:48:25.743Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:48:25.744Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:48:25.746Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:48:25.747Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:48:25.755Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:48:25.757Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:48:39.614Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:48:39.615Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:48:39.757Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:48:39.760Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:48:39.760Z"}
+{"level":"info","message":"User attempting to create product: {\"userId\":17,\"role\":\"admin\",\"body\":{\"name\":\"+\"}}","timestamp":"2025-05-01T20:48:43.831Z"}
+{"level":"info","message":"Received request to create product. Body: {\"name\":\"+\"}","timestamp":"2025-05-01T20:48:43.832Z"}
+{"level":"info","message":"Request user: {\"userId\":17,\"email\":\"admin@panel.com\",\"role\":\"admin\",\"name\":\"Admin Panel\",\"iat\":1746132519,\"exp\":1746218919}","timestamp":"2025-05-01T20:48:43.832Z"}
+{"level":"info","message":"Creating new product with name: \"+\"","timestamp":"2025-05-01T20:48:43.833Z"}
+{"level":"info","message":"Executing SQL query: INSERT INTO products (name) VALUES (?) with params: [\"+\"]","timestamp":"2025-05-01T20:48:43.833Z"}
+{"created_at":"2025-05-01T20:48:43.000Z","id":133,"level":"info","message":"Product created with ID: 133, details:","name":"+","status":1,"timestamp":"2025-05-01T20:48:43.986Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:48:59.971Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:49:00.007Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:49:00.242Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:49:00.244Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:49:00.244Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:49:00.287Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:49:00.290Z"}
+{"level":"info","message":"Fetching draft orders for market ID: 1","timestamp":"2025-05-01T20:49:00.322Z"}
+{"level":"info","message":"Found 1 draft items for market ID: 1","timestamp":"2025-05-01T20:49:00.388Z"}
+{"level":"info","message":"Draft data: [{\"id\":395,\"product_id\":11,\"product_name\":\"Абат\",\"quantity\":\"1.00\",\"received_quantity\":\"5.00\",\"price\":\"5.00\",\"total\":\"25.00\",\"updated_at\":\"2025-05-01T15:54:31.000Z\"}]","timestamp":"2025-05-01T20:49:00.388Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:49:08.292Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:49:08.294Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:49:08.438Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:49:08.440Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:49:08.440Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:49:08.485Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:49:08.486Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:49:08.487Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:49:08.505Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:49:08.509Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:49:08.513Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:49:08.517Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:49:08.520Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:49:08.522Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:49:08.525Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:49:08.527Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:49:08.531Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:49:08.535Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:49:08.540Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:49:08.544Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:49:08.545Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:49:08.550Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:49:08.554Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:49:08.604Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:49:08.607Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:53:15.747Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:53:15.748Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:53:15.753Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:53:15.755Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:53:15.759Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:53:15.762Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:53:15.764Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:53:15.783Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:53:15.786Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:53:15.788Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:53:15.790Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:53:15.791Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:53:15.800Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:53:15.803Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:53:16.903Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:53:16.915Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:53:16.919Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:53:16.922Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:53:17.204Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:53:17.206Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:53:47.264Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:53:47.264Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:53:47.267Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:53:47.271Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:53:47.275Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:53:47.279Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:53:47.280Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:53:47.282Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:53:47.285Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:53:47.321Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:53:47.332Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:53:47.377Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:53:47.390Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:53:47.493Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:53:47.496Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:53:47.497Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:53:47.500Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:53:47.502Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:53:48.339Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:53:48.342Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:54:20.813Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:54:20.815Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:54:20.958Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:54:20.960Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:54:20.960Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:54:20.995Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:54:20.996Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:54:20.997Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:54:21.000Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:54:21.005Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:54:21.006Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:54:21.008Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:54:21.011Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:54:21.016Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:54:21.017Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:54:21.021Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:54:21.025Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:54:21.029Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:54:21.030Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:54:21.033Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:54:21.035Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:54:21.128Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:54:21.131Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:54:21.152Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:54:21.154Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:56:42.226Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:56:42.227Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:56:42.232Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:56:42.236Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:56:42.240Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:56:42.244Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:56:42.246Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:56:42.248Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:56:42.261Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:56:42.265Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:56:42.268Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:56:42.276Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:56:42.278Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:56:42.281Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:56:42.305Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:56:42.309Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:56:42.314Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:56:42.316Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:56:42.355Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:56:42.358Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:57:15.738Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:57:15.754Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:57:15.759Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:57:15.773Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:57:15.778Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:57:15.785Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:57:15.789Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:57:15.791Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:57:15.795Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:57:15.803Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:57:15.815Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:57:15.822Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:57:15.841Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:57:15.853Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:57:15.855Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:57:15.859Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:57:15.871Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:57:15.873Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:57:15.908Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:57:15.913Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:58:16.724Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:58:16.726Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:58:16.750Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:58:16.755Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:58:16.771Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:58:16.774Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:58:18.727Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:58:18.729Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:58:18.770Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:58:18.773Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:58:18.806Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:58:18.809Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:58:41.664Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:58:41.665Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:58:41.702Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:58:41.713Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:58:41.734Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:58:41.737Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T20:59:04.566Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T20:59:04.568Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T20:59:04.711Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T20:59:04.714Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T20:59:04.714Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T20:59:04.740Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T20:59:04.740Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T20:59:04.741Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T20:59:04.744Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T20:59:04.746Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T20:59:04.747Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:59:04.751Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T20:59:04.752Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T20:59:04.753Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:59:04.754Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T20:59:04.767Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:59:04.771Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T20:59:04.775Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T20:59:04.776Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T20:59:04.779Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:59:04.780Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T20:59:04.808Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T20:59:04.811Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T20:59:04.877Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T20:59:04.880Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T21:00:16.761Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T21:00:16.762Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T21:00:16.765Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:00:16.769Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:00:16.772Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:00:16.776Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:00:16.780Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T21:00:16.782Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:00:16.784Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T21:00:16.786Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:00:16.789Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T21:00:16.790Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:00:16.793Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T21:00:16.797Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:00:16.819Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:00:16.824Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T21:00:16.830Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T21:00:16.834Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:00:16.871Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:00:16.881Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:00:34.009Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:00:34.014Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:00:34.018Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T21:00:34.021Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T21:00:34.024Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:00:34.026Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T21:00:34.028Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:00:34.036Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T21:00:34.062Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:00:34.103Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:00:34.111Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:00:34.118Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:00:34.124Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T21:00:34.129Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T21:00:34.194Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T21:00:34.196Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T21:00:34.207Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T21:00:34.210Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:00:34.541Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:00:34.544Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:01:49.735Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:01:49.737Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:01:49.903Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T21:01:49.906Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T21:01:49.906Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T21:01:49.969Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T21:01:49.970Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T21:01:49.972Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T21:01:49.977Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:01:49.985Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:01:49.989Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:01:49.993Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:01:49.998Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T21:01:49.999Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:01:50.002Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T21:01:50.004Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:01:50.008Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T21:01:50.013Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:01:50.016Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T21:01:50.019Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T21:01:50.025Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:01:50.038Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:01:50.043Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:01:50.157Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:01:50.203Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:02:35.578Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T21:02:35.599Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:02:35.630Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:02:35.658Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:02:35.855Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:02:35.887Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T21:02:38.077Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T21:02:38.077Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:02:38.081Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T21:02:38.082Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:02:38.084Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T21:02:38.087Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T21:02:38.090Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T21:02:38.092Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T21:02:38.095Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T21:02:38.096Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:02:38.130Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:02:38.134Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T21:02:38.136Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:02:38.143Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:02:38.153Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:02:38.156Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:02:38.185Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:02:38.191Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:02:38.233Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:02:38.237Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:03:10.197Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T21:03:10.206Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:03:10.251Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:03:10.264Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:03:10.300Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:03:10.322Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:03:28.193Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:03:28.195Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:03:28.336Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T21:03:28.339Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T21:03:28.340Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T21:03:28.682Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T21:03:28.683Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T21:03:28.684Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T21:03:28.687Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T21:03:28.689Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:03:28.693Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:03:28.697Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:03:28.700Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:03:28.702Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T21:03:28.704Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:03:28.706Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T21:03:28.707Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:03:28.709Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T21:03:28.711Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T21:03:28.712Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:03:28.713Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:03:28.735Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:03:28.738Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:03:28.849Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:03:28.851Z"}
+{"level":"info","message":"Saving baza prices for 1 products","timestamp":"2025-05-01T21:05:55.468Z"}
+{"level":"info","message":"Baza prices saved successfully","timestamp":"2025-05-01T21:05:56.030Z"}
+{"level":"info","message":"Received save total goods request: {\"marketId\":1,\"totalGoods\":\"425.00\",\"transactionDate\":\"2025-05-01\"}","timestamp":"2025-05-01T21:05:56.111Z"}
+{"level":"info","message":"User: {\"userId\":16,\"email\":\"baza@panel.com\",\"role\":\"baza\",\"name\":\"Baza İdarəetmə\",\"iat\":1746133408,\"exp\":1746219808}","timestamp":"2025-05-01T21:05:56.127Z"}
+{"level":"info","message":"Saving total goods for market 1: 425.00","timestamp":"2025-05-01T21:05:56.161Z"}
+{"level":"info","message":"Saving total goods for market 1 on date 2025-05-01: 425.00","timestamp":"2025-05-01T21:05:56.162Z"}
+{"level":"info","message":"Inserted new total goods for market 1 on date 2025-05-01","timestamp":"2025-05-01T21:05:59.798Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:06:02.666Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:06:02.706Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:06:09.399Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:06:09.400Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:06:09.548Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T21:06:09.550Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T21:06:09.550Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T21:06:09.598Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T21:06:09.599Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T21:06:09.601Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:06:09.614Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:06:09.616Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:06:09.621Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:06:09.625Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:06:09.629Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T21:06:09.631Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:06:09.634Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:06:09.636Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T21:06:09.638Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T21:06:09.641Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T21:06:09.643Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T21:06:09.645Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T21:06:09.646Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:06:09.823Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:06:09.825Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:06:09.850Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:06:09.853Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:06:23.784Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:06:23.785Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:06:23.926Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T21:06:23.928Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T21:06:23.928Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T21:06:25.039Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T21:06:25.039Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T21:06:25.041Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T21:06:25.079Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T21:06:25.081Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T21:06:25.084Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T21:06:25.086Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T21:06:25.088Z"}
+{"level":"info","message":"Getting market transactions for date: 2025-05-01","timestamp":"2025-05-01T21:06:25.108Z"}
+{"level":"info","message":"Getting market transactions for date: 2025-05-01","timestamp":"2025-05-01T21:06:25.113Z"}
+{"level":"info","message":"Found 0 transactions for date 2025-05-01","timestamp":"2025-05-01T21:06:25.198Z"}
+{"level":"info","message":"Found 0 transactions for date 2025-05-01","timestamp":"2025-05-01T21:06:25.200Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:13:01.452Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:13:01.453Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:13:01.594Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T21:13:01.596Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T21:13:01.597Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:13:17.490Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:13:17.492Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:13:17.630Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T21:13:17.633Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T21:13:17.633Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:13:17.680Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:13:17.711Z"}
+{"level":"info","message":"Fetching draft orders for market ID: 1","timestamp":"2025-05-01T21:13:17.739Z"}
+{"level":"info","message":"Found 1 draft items for market ID: 1","timestamp":"2025-05-01T21:13:17.759Z"}
+{"level":"info","message":"Draft data: [{\"id\":395,\"product_id\":11,\"product_name\":\"Абат\",\"quantity\":\"1.00\",\"received_quantity\":\"5.00\",\"price\":\"5.00\",\"total\":\"25.00\",\"updated_at\":\"2025-05-01T15:54:31.000Z\"}]","timestamp":"2025-05-01T21:13:17.759Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:13:30.059Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:13:30.061Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:13:30.202Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T21:13:30.204Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T21:13:30.205Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T21:13:30.244Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T21:13:30.245Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T21:13:30.247Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T21:13:30.250Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T21:13:30.253Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T21:13:30.255Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T21:13:30.257Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T21:13:30.258Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:13:30.264Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:13:30.268Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:13:30.272Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:13:30.276Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:13:30.277Z"}
+{"level":"info","message":"Found 2 pending orders","timestamp":"2025-05-01T21:13:30.279Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:13:30.282Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:13:30.284Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:13:30.302Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:13:30.306Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:13:30.388Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:13:30.391Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:13:47.242Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:13:47.244Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:13:47.389Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T21:13:47.391Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T21:13:47.392Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:13:47.429Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:13:47.431Z"}
+{"level":"info","message":"Fetching draft orders for market ID: 1","timestamp":"2025-05-01T21:13:47.450Z"}
+{"level":"info","message":"Found 1 draft items for market ID: 1","timestamp":"2025-05-01T21:13:47.495Z"}
+{"level":"info","message":"Draft data: [{\"id\":395,\"product_id\":11,\"product_name\":\"Абат\",\"quantity\":\"1.00\",\"received_quantity\":\"5.00\",\"price\":\"5.00\",\"total\":\"25.00\",\"updated_at\":\"2025-05-01T15:54:31.000Z\"}]","timestamp":"2025-05-01T21:13:47.495Z"}
+{"level":"info","message":"Creating new order for market ID: 1 with 2 items","timestamp":"2025-05-01T21:14:09.782Z"}
+{"level":"info","message":"Order created with ID: 103","timestamp":"2025-05-01T21:14:10.729Z"}
+{"level":"info","message":"Saving 2 draft items for market ID: 1","timestamp":"2025-05-01T21:14:10.848Z"}
+{"level":"info","message":"Request body: {\"marketId\":1,\"items\":[{\"productId\":127,\"quantity\":1,\"receivedQuantity\":0,\"price\":0,\"total\":0},{\"productId\":11,\"quantity\":1,\"receivedQuantity\":5,\"price\":5,\"total\":25}]}","timestamp":"2025-05-01T21:14:10.849Z"}
+{"level":"info","message":"Formatted items to save: [{\"productId\":127,\"quantity\":1,\"receivedQuantity\":0,\"price\":0,\"total\":0},{\"productId\":11,\"quantity\":1,\"receivedQuantity\":5,\"price\":5,\"total\":25}]","timestamp":"2025-05-01T21:14:10.850Z"}
+{"level":"info","message":"Successfully saved 2 draft items for market ID: 1","timestamp":"2025-05-01T21:14:11.730Z"}
+{"level":"info","message":"Saving 2 draft items for market ID: 1","timestamp":"2025-05-01T21:14:15.437Z"}
+{"level":"info","message":"Request body: {\"marketId\":1,\"items\":[{\"productId\":127,\"quantity\":1,\"receivedQuantity\":1,\"price\":1,\"total\":1},{\"productId\":11,\"quantity\":1,\"receivedQuantity\":5,\"price\":5,\"total\":25}]}","timestamp":"2025-05-01T21:14:15.437Z"}
+{"level":"info","message":"Formatted items to save: [{\"productId\":127,\"quantity\":1,\"receivedQuantity\":1,\"price\":1,\"total\":1},{\"productId\":11,\"quantity\":1,\"receivedQuantity\":5,\"price\":5,\"total\":25}]","timestamp":"2025-05-01T21:14:15.438Z"}
+{"level":"info","message":"Successfully saved 2 draft items for market ID: 1","timestamp":"2025-05-01T21:14:15.578Z"}
+{"level":"info","message":"Saving total: marketId=1, total=26 via root endpoint","timestamp":"2025-05-01T21:14:15.629Z"}
+{"level":"info","message":"Saved total 26 for market 1","timestamp":"2025-05-01T21:14:16.343Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:14:31.636Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:14:31.638Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:14:31.777Z"}
+{"level":"warn","message":"Invalid password for user:","timestamp":"2025-05-01T21:14:31.778Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:14:38.295Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:14:38.297Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:14:38.441Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T21:14:38.443Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T21:14:38.443Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:14:38.475Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:14:38.477Z"}
+{"level":"info","message":"Fetching draft orders for market ID: 1","timestamp":"2025-05-01T21:14:38.493Z"}
+{"level":"info","message":"Found 2 draft items for market ID: 1","timestamp":"2025-05-01T21:14:38.495Z"}
+{"level":"info","message":"Draft data: [{\"id\":396,\"product_id\":127,\"product_name\":\"!\",\"quantity\":\"1.00\",\"received_quantity\":\"1.00\",\"price\":\"1.00\",\"total\":\"1.00\",\"updated_at\":\"2025-05-01T21:14:15.000Z\"},{\"id\":395,\"product_id\":11,\"product_name\":\"Абат\",\"quantity\":\"1.00\",\"received_quantity\":\"5.00\",\"price\":\"5.00\",\"total\":\"25.00\",\"updated_at\":\"2025-05-01T21:14:15.000Z\"}]","timestamp":"2025-05-01T21:14:38.496Z"}
+{"level":"info","message":"Getting total for marketId=1 via root endpoint","timestamp":"2025-05-01T21:14:40.963Z"}
+{"level":"info","message":"Found total 26.00 for market 1","timestamp":"2025-05-01T21:14:41.019Z"}
+{"level":"info","message":"Login attempt for email:","timestamp":"2025-05-01T21:14:54.623Z"}
+{"level":"info","message":"Found users:","timestamp":"2025-05-01T21:14:54.625Z"}
+{"level":"info","message":"Password validation result:","timestamp":"2025-05-01T21:14:54.759Z"}
+{"level":"info","message":"Login successful for user:","timestamp":"2025-05-01T21:14:54.761Z"}
+{"level":"info","message":"User role:","timestamp":"2025-05-01T21:14:54.761Z"}
+{"level":"info","message":"Fetching all markets","timestamp":"2025-05-01T21:14:54.789Z"}
+{"level":"info","message":"Database connection check...","timestamp":"2025-05-01T21:14:54.789Z"}
+{"level":"info","message":"Database connection successful","timestamp":"2025-05-01T21:14:54.791Z"}
+{"level":"info","message":"Users table structure: [{\"Field\":\"id\",\"Type\":\"int\",\"Null\":\"NO\",\"Key\":\"PRI\",\"Default\":null,\"Extra\":\"auto_increment\"},{\"Field\":\"email\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"UNI\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"password\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"name\",\"Type\":\"varchar(255)\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"role\",\"Type\":\"enum('market','baza','admin')\",\"Null\":\"NO\",\"Key\":\"\",\"Default\":null,\"Extra\":\"\"},{\"Field\":\"created_at\",\"Type\":\"timestamp\",\"Null\":\"YES\",\"Key\":\"\",\"Default\":\"CURRENT_TIMESTAMP\",\"Extra\":\"DEFAULT_GENERATED\"}]","timestamp":"2025-05-01T21:14:54.795Z"}
+{"level":"info","message":"Available roles in users table: [{\"role\":\"market\"},{\"role\":\"baza\"},{\"role\":\"admin\"}]","timestamp":"2025-05-01T21:14:54.799Z"}
+{"level":"info","message":"Sample users from database: [{\"id\":1,\"email\":\"market1@panel.com\",\"password\":\"$2a$10$T/7SBDsBnZMS4NmhStNLqOgwDKVFRbDFKrKxd6s37sJJ5rXqZdIg2\",\"name\":\"Market 1\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":2,\"email\":\"market2@panel.com\",\"password\":\"$2a$10$FW9cRzCSEVBwOhi7q8TEIuYKq9J13pQIz8Za1ry4B6RBXzW1trKe.\",\"name\":\"Market 2\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"},{\"id\":3,\"email\":\"market3@panel.com\",\"password\":\"$2a$10$Pf7kjWtn7AuZhsGO28FFsOqSuBWZ6Qu1Fz6f9b1zcEahHK25/U/4.\",\"name\":\"Market 3\",\"role\":\"market\",\"created_at\":\"2025-04-13T19:40:55.000Z\"}]","timestamp":"2025-05-01T21:14:54.801Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:14:54.805Z"}
+{"level":"info","message":"Query executed with role 'market', results: [{\"id\":1,\"name\":\"Market 1\"},{\"id\":2,\"name\":\"Market 2\"},{\"id\":3,\"name\":\"Market 3\"},{\"id\":4,\"name\":\"Market 4\"},{\"id\":5,\"name\":\"Market 5\"},{\"id\":6,\"name\":\"Market 6\"},{\"id\":7,\"name\":\"Market 7\"},{\"id\":8,\"name\":\"Market 8\"},{\"id\":9,\"name\":\"Market 9\"},{\"id\":10,\"name\":\"Market 10\"},{\"id\":11,\"name\":\"Market 11\"},{\"id\":12,\"name\":\"Market 12\"},{\"id\":13,\"name\":\"Market 13\"},{\"id\":14,\"name\":\"Market 14\"},{\"id\":15,\"name\":\"Market 15\"}]","timestamp":"2025-05-01T21:14:54.806Z"}
+{"level":"info","message":"Found 15 markets","timestamp":"2025-05-01T21:14:54.807Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:14:54.811Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:14:54.815Z"}
+{"level":"info","message":"Fetching all products","timestamp":"2025-05-01T21:14:54.820Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:14:54.822Z"}
+{"level":"info","message":"Found 3 pending orders","timestamp":"2025-05-01T21:14:54.824Z"}
+{"level":"info","message":"Found 133 products","timestamp":"2025-05-01T21:14:54.828Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:14:54.831Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:14:54.848Z"}
+{"level":"info","message":"Fetching order with ID: 103","timestamp":"2025-05-01T21:14:54.852Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:14:54.857Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:14:54.935Z"}
+{"level":"info","message":"Found 1 baza prices","timestamp":"2025-05-01T21:14:54.938Z"}
+{"level":"info","message":"Saving baza prices for 2 products","timestamp":"2025-05-01T21:14:58.721Z"}
+{"level":"info","message":"Baza prices saved successfully","timestamp":"2025-05-01T21:14:58.897Z"}
+{"level":"info","message":"Received save total goods request: {\"marketId\":1,\"totalGoods\":\"450.00\",\"transactionDate\":\"2025-05-01\"}","timestamp":"2025-05-01T21:14:58.921Z"}
+{"level":"info","message":"User: {\"userId\":16,\"email\":\"baza@panel.com\",\"role\":\"baza\",\"name\":\"Baza İdarəetmə\",\"iat\":1746134094,\"exp\":1746220494}","timestamp":"2025-05-01T21:14:58.922Z"}
+{"level":"info","message":"Saving total goods for market 1: 450.00","timestamp":"2025-05-01T21:14:58.922Z"}
+{"level":"info","message":"Saving total goods for market 1 on date 2025-05-01: 450.00","timestamp":"2025-05-01T21:14:58.923Z"}
+{"level":"info","message":"Updated total goods for market 1 on date 2025-05-01","timestamp":"2025-05-01T21:14:59.691Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:15:00.797Z"}
+{"level":"info","message":"Found 2 baza prices","timestamp":"2025-05-01T21:15:00.799Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:15:01.473Z"}
+{"level":"info","message":"Found 3 pending orders","timestamp":"2025-05-01T21:15:01.475Z"}
+{"level":"info","message":"Fetching order with ID: 103","timestamp":"2025-05-01T21:15:01.508Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:15:01.515Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:15:01.519Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:15:01.558Z"}
+{"level":"info","message":"Found 2 baza prices","timestamp":"2025-05-01T21:15:01.560Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:15:02.366Z"}
+{"level":"info","message":"Found 3 pending orders","timestamp":"2025-05-01T21:15:02.368Z"}
+{"level":"info","message":"Fetching order with ID: 103","timestamp":"2025-05-01T21:15:02.414Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:15:02.418Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:15:02.422Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:15:02.454Z"}
+{"level":"info","message":"Found 2 baza prices","timestamp":"2025-05-01T21:15:02.457Z"}
+{"level":"info","message":"Fetching all pending orders","timestamp":"2025-05-01T21:15:03.877Z"}
+{"level":"info","message":"Found 3 pending orders","timestamp":"2025-05-01T21:15:03.879Z"}
+{"level":"info","message":"Fetching order with ID: 103","timestamp":"2025-05-01T21:15:03.899Z"}
+{"level":"info","message":"Fetching order with ID: 102","timestamp":"2025-05-01T21:15:03.902Z"}
+{"level":"info","message":"Fetching order with ID: 101","timestamp":"2025-05-01T21:15:03.904Z"}
+{"level":"info","message":"Fetching all baza prices","timestamp":"2025-05-01T21:15:03.935Z"}
+{"level":"info","message":"Found 2 baza prices","timestamp":"2025-05-01T21:15:03.938Z"}
